@@ -1,2 +1,2 @@
-# Flying-Object-BluePrint
+# BluePrint
 written in Visual Basic .net
