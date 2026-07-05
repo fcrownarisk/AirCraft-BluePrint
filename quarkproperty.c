@@ -52,7 +52,7 @@ static const double SPIN_HBAR[6] = {
 };
 
 /* Baryon number (1/3 per quark) */
-static const double BARYON_NUM[6] = {
+static const float BARYON_NUM[6] = {
     1.0/3.0, 1.0/3.0, 1.0/3.0, 
     1.0/3.0, 1.0/3.0, 1.0/3.0
 };
