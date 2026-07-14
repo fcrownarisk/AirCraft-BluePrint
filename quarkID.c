@@ -34,18 +34,18 @@ typedef uint16_t QuarkID;  /* bits: [15:12]reserved [11:9]composite [8]parity [7
 #define Q_COMP(id)    (((id)>>9)&0x7)
 
 /*--- 4. 12 CANONICAL QUARK TYPES (all single-quark matter states) ---*/
-static const QuarkID QUARK_UP_RED      = QID(UP,     RED,   MATTER,     QUARK);
-static const QuarkID QUARK_UP_GREEN    = QID(UP,     GREEN, MATTER,     QUARK);
-static const QuarkID QUARK_UP_BLUE     = QID(UP,     BLUE,  MATTER,     QUARK);
-static const QuarkID QUARK_DOWN_RED    = QID(DOWN,   RED,   MATTER,     QUARK);
-static const QuarkID QUARK_DOWN_GREEN  = QID(DOWN,   GREEN, MATTER,     QUARK);
-static const QuarkID QUARK_DOWN_BLUE   = QID(DOWN,   BLUE,  MATTER,     QUARK);
-static const QuarkID QUARK_CHARM_RED   = QID(CHARM,  RED,   MATTER,     QUARK);
-static const QuarkID QUARK_STRANGE_GREEN=QID(STRANGE,GREEN, MATTER,     QUARK);
-static const QuarkID QUARK_TOP_RED     = QID(TOP,    RED,   MATTER,     QUARK);
-static const QuarkID QUARK_BOTTOM_BLUE = QID(BOTTOM, BLUE,  MATTER,     QUARK);
-static const QuarkID ANTIQUARK_UP_RED  = QID(UP,     RED,   ANTIMATTER, ANTIQUARK);
-static const QuarkID ANTIQUARK_DOWN_GREEN=QID(DOWN, GREEN, ANTIMATTER, ANTIQUARK);
+const QuarkID QUARK_UP_RED      = QID(UP,     RED,   MATTER,     QUARK);
+const QuarkID QUARK_UP_GREEN    = QID(UP,     GREEN, MATTER,     QUARK);
+const QuarkID QUARK_UP_BLUE     = QID(UP,     BLUE,  MATTER,     QUARK);
+const QuarkID QUARK_DOWN_RED    = QID(DOWN,   RED,   MATTER,     QUARK);
+const QuarkID QUARK_DOWN_GREEN  = QID(DOWN,   GREEN, MATTER,     QUARK);
+const QuarkID QUARK_DOWN_BLUE   = QID(DOWN,   BLUE,  MATTER,     QUARK);
+const QuarkID QUARK_CHARM_RED   = QID(CHARM,  RED,   MATTER,     QUARK);
+const QuarkID QUARK_STRANGE_GREEN=QID(STRANGE,GREEN, MATTER,     QUARK);
+const QuarkID QUARK_TOP_RED     = QID(TOP,    RED,   MATTER,     QUARK);
+const QuarkID QUARK_BOTTOM_BLUE = QID(BOTTOM, BLUE,  MATTER,     QUARK);
+const QuarkID ANTIQUARK_UP_RED  = QID(UP,     RED,   ANTIMATTER, ANTIQUARK);
+const QuarkID ANTIQUARK_DOWN_GREEN=QID(DOWN, GREEN, ANTIMATTER, ANTIQUARK);
 
 /*--- 5. KERNEL OPERATIONS (stateless, pure functions) ---*/
 static inline double quark_mass(QuarkID q)    { return MASS_MEV[Q_FLAVOR(q)]; }
